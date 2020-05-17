@@ -276,11 +276,14 @@ class performanceRatio:
 
 if __name__ == "__main__":
     state = sys.argv[1]
+    #state = "gpoa"
 
     # GPOA IRRADIANCE OUTPUT
     if state == "gpoa":
         lat = sys.argv[2]
         lon = sys.argv[3]
+        #lat = 42
+        #lon = -71
         try:
             x = getIrradience(lat,lon)
             df = x.generate_today_dataframe()

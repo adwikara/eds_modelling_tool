@@ -163,7 +163,7 @@ function getBackendData(backendInputs) {
         args: backendInputs
     }
 
-    let test = new PythonShell('backend.py', options);
+    let test = new PythonShell('./src/backend.py', options);
     test.on('message', function (message) {
         results  = message
         
@@ -178,7 +178,7 @@ function getTableData(backendInputs) {
         args: backendInputs
     }
 
-    let test = new PythonShell('backend.py', options);
+    let test = new PythonShell('./src/backend.py', options);
     test.on('message', function (message) {
         results  = results + message;
         
