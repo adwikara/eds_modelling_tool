@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Sheet</title>
+
+    <link rel="stylesheet" href="./help.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 id="title">Formula Sheet</h1>
+        </div>
+     </header>
+     <div class="main">
+        <div class="options">
+            <div class="sub-header">
+                <h3>Select Formula</h3>
+            </div>
+            <input type="radio" id="gpoa" name="options" onclick=gpoaClicked(this) value="all" checked>
+            <label for="gpoa">Irradiance</label>
+            <input type="radio" id="energy" name="options" onclick=energyClicked(this) value="true">
+            <label for="energy">Energy</label>
+            <input type="radio" id="pr" name="options" onclick=prClicked(this) value="false">
+            <label for="pr">PR</label>
+            <input type="radio" id="water" name="options" onclick=waterClicked(this) value="false">
+            <label for="water">Water</label>
+            <input type="radio" id="econ" name="options" onclick=econClicked(this) value="false">
+            <label for="econ">Economics</label>
+         </div>
+         <div class="display">
+            <div class="formula-format" id="gpoa-formula">
+                <h4>GPOA Modelling Formula</h4>
+               <img src="../img/gpoa_formula.png" alt="">
+            </div>
+            <div class="formula-format" id="energy-formula">
+                <h4>Energy Generation Formula</h4>
+               <img src="../img/energy_formula.png" alt="">
+            </div>
+             <div class="formula-format" id="pr-formula">
+                 <h4>Performance Ratio Formula</h4>
+                <img src="../img/pr_formula.png" alt="">
+             </div>
+             <div class="formula-format" id="water-formula">
+                <h4>Water Conservation Formula</h4>
+               <img src="../img/water_formula.png" alt="">
+            </div>
+            <div class="formula-format" id="econ-formula">
+                <h4>Economic Analysis Formula</h4>
+               <img src="../img/econ_formula.png" alt="">
+            </div>
+
+
+         </div>
+
+     </div>
+     <script src="help.js"></script>
+</body>
+</html>

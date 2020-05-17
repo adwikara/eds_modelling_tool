@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>EDS Modelling Tool</title>
+
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <header>
+        <div class="header-container">
+            <h1 id="title">EDS Modelling Tool</h1>
+            <h4 id="author">Aditya Wikara</h4>
+        </div>
+     </header>
+     <div class="main">
+         <div class="inputs">
+             <div class="output-param">
+                <div class="sub-header">
+                    <h3>Output Options</h3>
+                </div>
+                <input type="radio" id="gpoa" name="options" onclick=gpoaClicked(this) value="all" checked>
+                <label for="gpoa">Irradiance</label>
+                <input type="radio" id="energy" name="options" onclick=energyClicked(this) value="true">
+                <label for="energy">Energy</label>
+                <input type="radio" id="pr" name="options" onclick=prClicked(this) value="false">
+                <label for="pr">PR</label>
+                <input type="radio" id="water" name="options" onclick=waterClicked(this) value="false">
+                <label for="water">Water</label>
+                <input type="radio" id="econ" name="options" onclick=econClicked(this) value="false">
+                <label for="econ">Economics</label>
+             </div>
+            <div class="input-param">
+                <div class="sub-header">
+                    <h3>Input Parameters</h3>
+                </div>
+                <label>Latitude: </label><br>
+                <input type="text" id="lat" placeholder="42.3505"><br>
+                <label>Longitude: </label><br>
+                <input type="text" id="lng" placeholder="-71.1054"><br>
+                <label>System Capacity: </label><br>
+                <input type="text" id="sys_cap" disabled="true"><br>
+                <label>Water Cost: </label><br>
+                <input type="text" id="water_cost" disabled="true" placeholder="$/liter"><br>
+                <label>LCOE: </label><br>
+                <input type="text" id="lcoe" disabled="true" placeholder="$0.06/kWh"><br>
+                <label>EDS Solar Power Plant SLR: </label><br>
+                <input type="text" id="eds_slr"><br>
+                <label>Regular Solar Power Plant SLR: </label><br>
+                <input type="text" id="reg_slr"><br>
+                <label>EDS Activation Frequency: </label><br>
+                <input type="text" id="eds_freq"><br>
+                <label>Water Cleaning Frequency: </label><br>
+                <input type="text" id="water_freq"><br>
+                <label>EDS Film Cleaning Frequency: </label><br>
+                <input type="text" id="eds_clean_freq"><br>
+            </div>
+            <div>
+                <div class="sub-header">
+                    <h3>Run The Model</h3>
+                </div>
+                <div class="buttons-area">
+                    <div><button id="resultBtn">Process</button></div>
+                    <div><button id="refreshBtn">Clear</button></div>
+                    <div><button id="helpBtn"><img height="40" src="../img/question_icon.png"/></button></div>
+                </div>
+            </div>
+         </div>
+         <div class="outputs">
+            <section id="display_output"></section>
+         </div>
+         <div class="loading">Loading&#8230;</div>
+     </div>
+
+    <script src="index.js"></script>
+ </body>
+ </html>

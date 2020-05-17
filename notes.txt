@@ -1,0 +1,17 @@
+npm init                        ----> create package.json file
+
+npm init -y                     ----> defaulted inputs
+
+npm install --save-dev electron ----> install electron to the directory
+
+ npm install -g electron-packager --> install electron package manager
+
+ https://www.christianengvall.se/electron-packager-tutorial/
+
+
+ python-shell library
+ https://www.npmjs.com/package/python-shell
+ https://www.youtube.com/watch?v=CJi6hDOIxR0
+
+ nsrdb databse
+ https://nsrdb.nrel.gov/data-sets/api-instructions.html
