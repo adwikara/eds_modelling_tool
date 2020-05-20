@@ -36,7 +36,7 @@ let exitBtns = []
 let data
 let loadWheel = document.querySelectorAll('.loading')
 displayOutput = document.getElementById("display_output")
-const backendTimer = 7000 // 7 seconds
+const backendTimer = 7500 // 7.5 seconds
 
 
 /* New Window Feature To Display Formula Sheet */
@@ -554,9 +554,9 @@ function displayPR() {
                 let prPlots = document.createElement("div")
                 prPlots.className = "plot-format"
                 let edsPlot = document.createElement("img")
-                edsPlot.src = "./img/PR_eds_plot.png"
+                edsPlot.src = "../img/PR_eds_plot.png"
                 let regPlot = document.createElement("img")
-                regPlot.src = "./img/PR_reg_plot.png"
+                regPlot.src = "../img/PR_reg_plot.png"
                 prPlots.appendChild(edsPlot)
                 prPlots.appendChild(regPlot)
 
