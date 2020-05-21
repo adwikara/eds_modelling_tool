@@ -10,30 +10,30 @@
  <body>
      <header>
         <div class="header-container">
-            <h1 id="title">EDS Modelling Tool</h1>
-            <h4 id="author">Aditya Wikara</h4>
+            <h3 id="title">EDS Modelling Tool</h3>
+            <h6 id="author">Aditya Wikara</h6>
         </div>
      </header>
      <div class="main">
          <div class="inputs">
              <div class="output-param">
                 <div class="sub-header">
-                    <h3>Output Options</h3>
+                    <h5>Output Options</h5>
                 </div>
-                <input type="radio" id="gpoa" name="options" onclick=gpoaClicked(this) value="all" checked>
-                <label for="gpoa">Irradiance</label>
-                <input type="radio" id="energy" name="options" onclick=energyClicked(this) value="true">
-                <label for="energy">Energy</label>
+                <input type="radio" id="gpoa" name="options" onclick=gpoaClicked(this) value="true">
+                <label for="gpoa" style="font-size: small">Irradiance</label>
+                <input type="radio" id="energy" name="options" onclick=energyClicked(this) value="false">
+                <label for="energy" style="font-size: small">Energy</label>
                 <input type="radio" id="pr" name="options" onclick=prClicked(this) value="false">
-                <label for="pr">PR</label>
+                <label for="pr" style="font-size: small">PR</label>
                 <input type="radio" id="water" name="options" onclick=waterClicked(this) value="false">
-                <label for="water">Water</label>
+                <label for="water" style="font-size: small">Water</label>
                 <input type="radio" id="econ" name="options" onclick=econClicked(this) value="false">
-                <label for="econ">Economics</label>
+                <label for="econ" style="font-size: small">Economics</label>
              </div>
             <div class="input-param">
                 <div class="sub-header">
-                    <h3>Input Parameters</h3>
+                    <h5>Input Parameters</h5>
                 </div>
                 <label>Latitude: </label><br>
                 <input type="text" id="lat" placeholder="42.3505"><br>
@@ -58,7 +58,7 @@
             </div>
             <div>
                 <div class="sub-header">
-                    <h3>Run The Model</h3>
+                    <h5>Run The Model</h5>
                 </div>
                 <div class="buttons-area">
                     <div><button id="resultBtn">Process</button></div>
