@@ -4,7 +4,9 @@ npm init -y                     ----> defaulted inputs
 
 npm install --save-dev electron ----> install electron to the directory
 
- npm install -g electron-packager --> install electron package manager
+npm install -g electron-packager --> install electron package manager
+
+npm install axios                 --> install axios for get requeset
 
  https://www.christianengvall.se/electron-packager-tutorial/
 

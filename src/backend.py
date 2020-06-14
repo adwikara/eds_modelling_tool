@@ -248,7 +248,7 @@ class performanceRatio:
         plt.xlabel('Number of Days')
         plt.title('EDS-Based Cleaning Solar Plant PR')
         plt.legend(loc='lower left')
-        plt.savefig("./img/PR_eds_plot", dpi=50)
+        plt.savefig("./src/pr_plots/PR_eds_plot", dpi=50)
 
     def plot_reg_PR(self):
         # get the daily PR
@@ -271,19 +271,19 @@ class performanceRatio:
         plt.xlabel('Number of Days')
         plt.title('Water-Based Cleaning Solar Plant PR')
         plt.legend(loc='lower left')
-        plt.savefig("./img/PR_reg_plot", dpi=50)
+        plt.savefig("./src/pr_plots/PR_reg_plot", dpi=50)
 
 
 if __name__ == "__main__":
-    state = sys.argv[1]
-    #state = "gpoa"
+    #state = sys.argv[1]
+    state = "gpoa"
 
     # GPOA IRRADIANCE OUTPUT
     if state == "gpoa":
-        lat = sys.argv[2]
-        lon = sys.argv[3]
-        #lat = 42
-        #lon = -71
+        #lat = sys.argv[2]
+        #lon = sys.argv[3]
+        lat = 42
+        lon = -71
         try:
             x = getIrradience(lat,lon)
             df = x.generate_today_dataframe()

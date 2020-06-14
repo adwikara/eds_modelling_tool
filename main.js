@@ -1,3 +1,4 @@
+
 const { app, BrowserWindow } = require('electron')
 
 
@@ -17,7 +18,7 @@ function createWindow () {
   win.loadFile('src/index.html')
 
   // Open the DevTools.
-  //win.webContents.openDevTools()
+  win.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
