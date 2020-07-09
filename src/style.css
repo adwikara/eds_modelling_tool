@@ -6,41 +6,30 @@ body{
 }
 
 /* Header */
-.header-container{
-    width:85%;
-    margin:auto;
-}
-
 header{
     background: #ffffff;
     color:#302d2d;
-    padding-top:10px;
-    min-height:10px;
-    border-top:#302d2d 8px solid;
-    border-bottom:#302d2d 8px solid;
-    position:fixed;
-    top:0;
+    border-top:#302d2d 6px solid;
+    border-bottom:#302d2d 6px solid;;
+    position: fixed;
     width: 100%;
+    text-align: center;
   }
 
-header h2 {
-    text-align: center;
+header h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
-header h4 {
-    text-align: center;
-    margin-top: 5px;
+header h5 {
+    margin-top: 2px;
+    margin-bottom: 10px;
 }
 
 /* Main Section */
-.main {
-    width:90%;
-    margin:auto;
-}
-
 .inputs {
   position: fixed;
-  top: 20%;
+  top: 12%;
   left: 5%;
   width: 40%;
   overflow: auto;
@@ -52,10 +41,11 @@ header h4 {
 
 .outputs {
   position: fixed;
-  top: 22%;
+  top: 13%;
   left: 45%;
-  right: 5%;
-  height: 75%;
+  right: 0%;
+  height: 80%;
+  width: 52%;
   overflow: auto;
 }
 
@@ -86,7 +76,7 @@ input[type=radio]:checked + label {
 }
 
 .sub-header h5{
-  margin: 8px auto;
+  margin: 6px auto;
 }
 
 /* Buttons */
@@ -167,7 +157,7 @@ input[type=radio]:checked + label {
     border-collapse: collapse;
     table-layout: auto;
     height:600px;
-    width: 550px;
+    width: 420px;
     overflow-y: scroll;
     display: block;
 }

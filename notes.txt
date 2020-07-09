@@ -20,11 +20,5 @@ npm run package-win
 
 
 
-
-
- python-shell library
- https://www.npmjs.com/package/python-shell
- https://www.youtube.com/watch?v=CJi6hDOIxR0
-
  nsrdb databse
  https://nsrdb.nrel.gov/data-sets/api-instructions.html
