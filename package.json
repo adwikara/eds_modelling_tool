@@ -24,7 +24,7 @@
     "electron": "^8.2.5"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "electron-packager": "^14.2.1",
     "plotly.js-dist": "^1.54.5",
     "python-shell": "^2.0.1"
